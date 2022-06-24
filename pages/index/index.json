@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-icon": "weui-miniprogram/icon/icon",
+    "tabs":"/miniprogram_npm/@miniprogram-component-plus/tabs/index",
+    "mp-movie":"../../Components/moiveitem/moiveitem"
+
+  }
+}

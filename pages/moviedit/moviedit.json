@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mp-icon": "weui-miniprogram/icon/icon",
+    "van-rate": "../../miniprogram_npm/@vant/weapp/rate/index"
+  }
+}

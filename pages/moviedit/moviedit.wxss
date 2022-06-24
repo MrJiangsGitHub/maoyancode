@@ -1,0 +1,107 @@
+/* pages/moviedit/moviedit.wxss */
+.header{
+    padding: 16rpx;
+}
+.moviejuzhao{
+  display: flex;
+  height: 300rpx;
+margin-bottom: 40rpx;
+
+}
+.img-box{
+    flex:1
+    
+}
+
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+.left{
+    flex: 2;
+    margin-left: 20rpx;
+    color: #a5b5b7;
+    font-size: 14px;
+}
+.left .nm{
+    font-weight: 700;
+    color: #fff;
+}
+.left .name{
+    width: 450rpx;
+
+}
+.left .enm{
+    margin-top: 10rpx;
+}
+.left .btn{
+    display: flex;
+}
+
+.line-ellipsis{
+white-space:nowrap ;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+.comment{
+    background-color: rgba(0,0,0,.18);
+    border-radius: 0.16rem;
+    height: 300rpx;
+    padding: 20rpx;
+}
+.comment .scoreLabel{
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+}
+.comment .title{
+  color: rgb(207, 226, 30);
+  font-weight: 700;
+  font-size: 50rpx;
+}
+.comment .nm-bok{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.comment .snum{
+  color: #ccc;
+}
+.higthHide{
+    height: 140rpx;
+    overflow: hidden;
+}
+.texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgcont .text{
+    clear: #ffff;
+}
+
+.imgMsg{
+    display: flex;
+        height: 300rpx;
+}
+.imgMsg image{
+    height: 100%;
+}
+
+.buttons{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    color: #fff;
+    background-color: #ef4238;
+    
+    font-size: 40rpx;
+
+}
+.movie-want {
+    color: #f5a54f;
+}

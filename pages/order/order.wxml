@@ -1,0 +1,10 @@
+<view>
+
+    <block wx:for="{{orderlist}}" wx:key="index">
+
+        <mp-movie movieData='{{item}}'></mp-movie>
+
+    </block>
+
+
+</view>

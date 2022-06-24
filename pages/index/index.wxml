@@ -1,0 +1,42 @@
+<view class="header">
+    <view>
+        {{city}}
+        <mp-icon icon="location" color="red"></mp-icon>
+    </view>
+    <tabs tabs="{{tabs}}" activeTab="{{activeTab}}" swiperClass="weui-tabs-swiper" bindtabclick="onTabClick" bindchange="onChange" tabUnderlineColor="#dd403b" tab-active-text-color="#dd403b" activeClass="tab-bar-title__selected">
+
+    </tabs>
+    <mp-icon type="field" icon="search" color="black" size="{{25}}"></mp-icon>
+</view>
+
+
+<block wx:if="{{activeTab==0}}">
+    <scroll-view refresher-enabled="true" bindscrolltolower="movieupdata" bindrefresherrefresh="onRefresh" refresher-triggered="{{triggered}}" scroll-y="{{true}}" style="height:{{hostHigth-30}}px;">
+
+        <block wx:for="{{movielist}}" wx:key="id">
+                <navigator open-type="navigate" url="/pages/moviedit/moviedit?id={{item.id}}">
+                <mp-movie movieData="{{item}}"></mp-movie>
+            </navigator> 
+        </block>
+    </scroll-view>
+    <view style="text-align:center;color:#333;" wx:if="{{!hasMore}}">我是有底线的</view>
+</block>
+
+
+<block wx:else>
+    <scroll-view  scroll-y="{{true}}" style="height:{{hostHigth-30}}px;">
+        <rich-text nodes="{{praiseMovie}}"></rich-text>
+        <block wx:for="{{movieDatalist}}" wx:key="index">
+            <view>{{index}}</view>
+            <view wx:for="{{item}}" wx:key="id">
+                <!-- <navigator open-type="navigate" url="/pages/moviedit/moviedit?id={{item.id}}">
+                <mp-movie movieData="{{item}}"></mp-movie>
+            </navigator> -->
+            <navigator  url="/pages/moviedit/moviedit?id={{item.id}}">
+                <mp-movie movieData="{{item}}"></mp-movie>
+            </navigator>
+            </view>
+        </block>
+
+    </scroll-view>
+</block>

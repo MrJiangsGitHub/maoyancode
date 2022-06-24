@@ -1,0 +1,155 @@
+<view class="header" style="background-color:{{movieData.backgroundColor}}">
+
+    <view class="moviejuzhao">
+       
+            <view class="img-box">
+                <image  class="img" src="{{movieData.img}}"></image>
+            </view>
+
+            <view class="left">
+                <view class="nm">
+                {{movieData.nm}}
+            </view>
+            
+            <view class="enm">
+                {{movieData.enm}}   
+            </view>
+            <view >
+                {{movieData.cat}}   
+            </view>
+            <view class="name">
+                <view class="line-ellipsis">
+                    {{movieData.star}}
+                </view>
+            </view>
+            <view>
+                {{movieData.pubDesc}}/{{movieData.dur}}分钟
+            </view>
+            <view class="btn">
+                <button catchtap="look"  size="mini" plain='{{true}}' style="width: 50%; color: #ffff;     margin: 0 10rpx;"><i class="iconfont icon-aixin {{ isSee ? 'movie-want': '' }}"></i>想看 </button>
+                <button  size="mini" plain='{{true}}' style="width: 50%; color: #ffff;"> <i class="iconfont icon-star"></i>看过</button>
+                
+            </view>
+            
+
+            </view>
+    </view>
+<view class="comment">
+        <view class="scoreLabel">
+            <view>
+            {{movieData.scoreLabel}}
+        </view>
+        <view>
+            {{movieData.wish}} 人想看
+
+        </view>
+        <view>
+            {{movieData.watched}} 看过 >
+        </view>
+        </view>
+        <view class="nm-bok">
+          <view>
+          <view class="title">
+            {{movieData.sc}}
+        </view>
+        <view class="snum">{{movieData.snum}} 人评</view>
+        </view>
+       
+       <view class="cart">
+        <view>
+        <van-rate
+  value="{{ value }}"
+  size="{{ 10 }}"
+  color="#ffd21e"
+  void-icon="star"
+  void-color="#eee"
+  bind:change="onChange"
+   
+/>
+       </view>
+       <view>
+        <van-rate
+  value="{{ value4 }}"
+  size="{{ 10 }}"
+  color="#ffd21e"
+  void-icon="star"
+  void-color="#eee"
+  bind:change="onChange"
+/>
+       </view>
+       <view>
+        <van-rate
+  value="{{ value3 }}"
+  size="{{ 10 }}"
+  color="#ffd21e"
+  void-icon="star"
+  void-color="#eee"
+  bind:change="onChange"
+/>
+       </view>  
+       <view>
+        <van-rate
+  value="{{ value2 }}"
+  size="{{ 10 }}"
+  color="#ffd21e"
+  void-icon="star"
+  void-color="#eee"
+  bind:change="onChange"
+/>
+       </view>  <view>
+        <van-rate
+  value="{{ value1}}"
+  size="{{ 10 }}"
+  color="#ffd21e"
+  void-icon="star"
+  void-color="#eee"
+  bind:change="onChange"
+/>
+       </view>
+       </view>
+        </view>
+        
+</view>
+<view>
+<view>
+   <view class="texts">
+    <view>简介</view> 
+    <view>
+            {{texts}}
+
+            <i bindtap="showAllDesc" style="font-size:40rpx; color:#1d1b1b;"
+        class="iconfont {{limit_class ? 'icon-down_arrow ' : 'icon-arrow-up'}}"></i>
+        </view>
+   </view>
+       
+</view>
+<view class="{{ limit_class ? 'higthHide' : ''}}">
+{{movieData.dra}}
+</view>
+<view>
+{{}}
+</view>
+</view>
+
+<view class="imgcont">
+<text class="text">剧照</text>
+<scroll-view scroll-x="{{true}}">
+<view class="imgMsg">
+    <view wx:for="{{movieData.photos}}" wx:key="*this">
+    <image src="{{item}}"></image>
+</view>
+</view>
+
+</scroll-view>
+
+<view wx:if="{{movieData.vd}}">
+    <text>精彩视频</text>
+
+    <video src="{{movieData.vd}}" style="width: 100%;"></video>
+
+</view>
+</view>
+<view class="btnbox">
+<button class="buttons" style="width: 100%; " catchtap="pay">特惠购票</button>
+</view>
+</view>

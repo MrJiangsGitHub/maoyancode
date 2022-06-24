@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "iconfont"; /* Project id 2539520 */
+    src: url('//at.alicdn.com/t/font_2539520_rxxfvpe7y0r.woff2?t=1640936700941') format('woff2'),
+         url('//at.alicdn.com/t/font_2539520_rxxfvpe7y0r.woff?t=1640936700941') format('woff'),
+         url('//at.alicdn.com/t/font_2539520_rxxfvpe7y0r.ttf?t=1640936700941') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-phone:before {
+    content: "\e63b";
+  }
+  
+  .icon-mac:before {
+    content: "\e667";
+  }
+  
+  .icon-watch:before {
+    content: "\e651";
+  }
+  
+  .icon-arrow-up:before {
+    content: "\e601";
+  }
+  
+  .icon-down_arrow:before {
+    content: "\e602";
+  }
+  
+  .icon-star:before {
+    content: "\e600";
+  }
+  
+  .icon-bofang:before {
+    content: "\e616";
+  }
+  
+  .icon-aixin:before {
+    content: "\e61a";
+  }
+  
+  .icon-sousuo:before {
+    content: "\e647";
+  }
+  
+  .icon-yingyuan:before {
+    content: "\e8c0";
+  }
+  
+  .icon-biaoqiankuozhan_wode-140:before {
+    content: "\eb04";
+  }
+  
+  .icon-movie:before {
+    content: "\ea40";
+  }
+  
+  

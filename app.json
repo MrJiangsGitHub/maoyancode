@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/mymovie/mymovie",
+    "pages/moviedit/moviedit",
+    "pages/login/login",
+    "pages/order/order",
+    "pages/thinksee/thinksee"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "猫眼电影",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#da2912",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "电影",
+      "iconPath": "/assets/tabbar/movie.png",
+      "selectedIconPath": "/assets/tabbar/movie_selected.png"
+    },
+    {
+      "pagePath": "pages/mymovie/mymovie",
+      "text": "我的",
+      "iconPath": "/assets/tabbar/my.png",
+      "selectedIconPath": "/assets/tabbar/my_selected.png"
+    }
+  ]
+  },
+  "useExtendedLib": {
+    "weui":true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请同意位置收授权，将给你展示更好的服务"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

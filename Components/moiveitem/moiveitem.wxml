@@ -1,0 +1,43 @@
+<view class="item">
+    <view class="imgWrap">
+        <image src="{{movieData.img}}"></image>
+        <image class="icon icon-play" src="/assets/images/i_play.png"></image>
+    </view>
+    <view class="info" >
+        <view class="top">
+            <view class="title">{{movieData.nm}} </view>
+            <text class="icon  {{ movieData.version ? 'max2d' : ''}}"></text>
+        </view>
+        <view class="want">想看的人数:{{movieData.wish}}</view>
+        <view class="star ellipsis_l1">主演：{{movieData.star}}</view>
+        <view class="today">{{movieData.showInfo!=='undefined' ? movieData.showInfo : '' }}</view>
+    </view>
+
+    <view class="buy">
+        <view class="score">{{movieData.sc}}分</view>
+        <!-- 隐藏购买的按钮 -->
+            <button wx:if="{{movieData.showst == 3}}" class="ticket" size="mini">购票</button>
+            <button wx:if="{{movieData.showst == 2}}" class="ticket"
+                style="border:1px solid #ef4238;background-color:#fff;color:#ef4238;" size="mini">
+                <i style="color:red;margin-right:10rpx;" class="iconfont icon-aixin"></i>想看</button>
+            <button wx:if="{{movieData.showst == 4}}" class="ticket" style="background-color:#52b0eb"
+                size="mini">预售</button>
+
+                <block wx:if="{{movieData.status !== undefined}}">
+                    <button data-movieid="{{movieData.id}}" wx:if="{{movieData.status == 0}}"  class="ticket" style="background-color:red"
+                    size="mini" catchtap="pay">立即支付</button>
+
+                    <button wx:if="{{movieData.status == 1}}" class="ticket" style="background-color:#52b0eb"
+                    size="mini">已完成</button>
+                    <button wx:if="{{movieData.status == 2}}" class="ticket" style="background-color:#52b0eb"
+                    size="mini"></button>
+                   
+                </block>
+                
+    </view>
+
+    
+
+
+
+</view>

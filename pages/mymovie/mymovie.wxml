@@ -1,0 +1,13 @@
+<view>
+<view>
+<navigator open-type="navigate" url="/pages/order/order">
+    我的订单
+
+</navigator>
+
+</view>
+<navigator open-type="navigate" url="/pages/thinksee/thinksee">
+    想看的电影
+
+</navigator>
+</view>

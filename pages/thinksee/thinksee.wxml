@@ -1,0 +1,10 @@
+<view>
+
+<block wx:for="{{lookmovie}}" wx:key="index">
+
+    <mp-movie movieData='{{item}}'></mp-movie>
+
+</block>
+
+
+</view>

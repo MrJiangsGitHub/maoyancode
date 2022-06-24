@@ -1,0 +1,6 @@
+
+<view>
+
+<button catchtap="postLogin">微信一键登录</button>
+</view>
+

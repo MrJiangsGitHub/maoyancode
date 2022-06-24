@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+
+    "mp-movie":"../../Components/moiveitem/moiveitem"
+  }
+}
